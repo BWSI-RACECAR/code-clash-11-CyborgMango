@@ -40,6 +40,7 @@ class Solution:
         lastNum=0
         longestLength=0
         currentLength=0
+        print(arr)
         for i in arr:
             if i>lastNum:
                 currentLength+=1
