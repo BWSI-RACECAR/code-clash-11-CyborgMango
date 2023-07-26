@@ -39,13 +39,13 @@ class Solution:
     def find_longest_increasing_subsequence(self, arr):
         lastNum=1000
         longestLength=0
-        currentLength=0
+        currentLength=1
         for i in arr:
-            if i>=lastNum:
+            if i>lastNum:
                 currentLength+=1
             else:
-                currentLength=0
-            if currentLength>longestLength:
+                currentLength=1
+            if currentLength>=longestLength:
                 longestLength=currentLength
             lastNum=i
         return longestLength
