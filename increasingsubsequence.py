@@ -41,7 +41,7 @@ class Solution:
         longestLength=0
         currentLength=0
         for i in arr:
-            if i>lastNum:
+            if i>=lastNum:
                 currentLength+=1
             else:
                 currentLength=0
